@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM - Document Objective Model</h1>
+     <p>Primeiro Parágrafo</p>
+     <p class="pcclasse">Segundo parágrafo</p>
+   
+    <div id="msg">Clique em mim</div>
+    <div name="divname">Utilizando name</div>
+
+    <script> 
+        //window.document.write('Olá Mundo')
+
+        //Seletores Java Script
+
+        //1. Por Tag (marca) -  getElementByTagName() [] -dentro do colchete passamos a posição desse elemento.
+
+       // window.documentBytagName()[] dentroa posição começa em zero
+
+      var paragrafo1 = window.document.getElementsByTagName('p')[0]// a contagem começa no 0.
+      paragrafo1.innerText = 'Selecionado por Tag Name.'
+
+          // 2. Por ID = getElementById()
+
+          var espacodiv = window.document.getElementById('msg')
+          espacodiv.innerHTML = '<strong> Olá pessoal! Estou selecionando por identificação! </strong>'
+
+          espacodiv.style.backgroundColor = 'red'
+
+        // 3. Por Class = getElementsByClassName()[]
+
+          var espacoPorClasse = window.document.getElementsByClassName('pcclasse')[0]
+          espacoPorClasse.innerHTML = '<h2>Selecionando por Classe!</h2>'
+          espacoPorClasse.style.color = 'blueviolet'
+
+          //4. Por Name = getElementsByName()[]
+
+          var espacoName = window.document.getElementsByName('divname')[0]
+
+          epacoName.innerHTML = '<h3>Selecionando por Name</h3>'
+
+          // 5. Por selector css = window.document.querySelector('')
+
+          var espacoSelector = window.document.querySelector('#msg')
+          espacoSelector.style.backgroundColor = 'yellow'
+          espacoSelector.style.color = 'black'
+    </script>
+
+
+</body>
+</html>

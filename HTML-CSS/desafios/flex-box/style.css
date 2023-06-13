@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+.container{
+    background-color: darkgray;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    row-gap: 20px; /*espaço entre as linhas*/
+    column-gap: 20px; /*espaço entre as colunas*/
+    gap: 50px;   /*espaçamento nas duas direções (gap:linha, coluna;)*/
+    justify-content: space-between; /*Quando a direção está como linha, ele faz o alinhamento na horizontal. Quando a direção está como coluna, ele faz o alinhamento na vertical.(center, start, end, space-around, space-between, space-evenly)*/
+    align-items: center;/*Quando a direção está como linha, ele faz o alinhamento na vertical. Quando a direção está como coluna, ele faz o alinhamento na horizontal.(center, start, end, space-around, space-between, space-evenly)*/
+}
+
+.item{
+    height: 200px;
+    width: 200px;
+
+    border: 1px solid black;
+    background-color: rgb(131, 9, 9);
+    text-align: center;
+    font-size: 20px;
+    line-height: 180px;
+}

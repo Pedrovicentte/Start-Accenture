@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+}
+
+div{
+    text-align: center;
+    padding: 10px;
+}
+section{
+    background-color: white;
+    border-radius: 5px;
+    max-width: 900px;
+    padding: 10px;
+    box-shadow: 2px 11px 20px 0px rgba(0, 0, 0, 0.273);
+    margin: auto
+   
+}
+h1,p{
+    text-align: center;
+}
+H1{
+    font-size: 35px;
+}
+h2{
+    text-indent: 30px;
+}
+li{
+    padding-bottom: 10px;
+}
+ol > li{
+    list-style: none;
+}

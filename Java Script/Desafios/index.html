@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--- Em um input, usuário digita 1º número
+    - Em um input, usuário digita a operação(+, -, /, *); (Pode ser a tag select também)
+    - Em um input, usuário digita 2º número
+    - Usuário clica em calcular para exibir resultado.
+-->
+    <h1>Calculadora</h1>
+
+<input type="number" name="num1" id="num1">
+    <select id="operacao">
+        <option value="+">+</option>
+        <option value="/">/</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+    </select>
+<input type="number" name="num2" id="num2">
+
+  <button onclick="calcular()">=</button>
+
+    <div id="res">
+    <script src="index.js"></script>
+</body>
+</html>
